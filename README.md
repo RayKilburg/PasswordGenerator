@@ -1,5 +1,5 @@
 # PasswordGenerator
 
-### random-password-generator-app.netlify.app
+### https://random-password-generator-app.netlify.app
 
 - Random Password Generator
