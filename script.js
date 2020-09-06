@@ -10,7 +10,7 @@ const generateEl = document.getElementById("generate");
 const upperLetters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 const lowerLetters = "abcdefghijklmnopqrstuvwxyz";
 const numbers = "0123456789";
-const symbols = "!@#$%^&*()_+=";
+const symbols = "!@#$%^&*()_-+=";
 
 function getLowercase() {
   return lowerLetters[Math.floor(Math.random() * lowerLetters.length)];
@@ -68,6 +68,7 @@ function generateX() {
 // Event Listeners
 generateEl.addEventListener("click", generatePassword);
 
+// Copy to clip board
 copyEl.addEventListener("click", () => {
   const textarea = document.createElement("textarea");
   const password = pwEl.innerText;
