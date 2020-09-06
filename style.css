@@ -45,6 +45,7 @@ body {
   font-family: inherit;
   font-weight: bold;
   padding: 0.25rem;
+  margin-right: 4px;
   position: absolute;
   bottom: 0;
   right: 0;
@@ -53,6 +54,8 @@ body {
   border-bottom-left-radius: 80%; */
   transition: opacity 0.2s ease, transform 0.2s ease;
   opacity: 0;
+  border: 2px solid #fff;
+  border-radius: 20%;
 }
 
 .pw:hover button {
