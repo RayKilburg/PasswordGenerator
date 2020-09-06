@@ -7,11 +7,13 @@ const numberEl = document.getElementById("number");
 const symbolEl = document.getElementById("symbol");
 const generateEl = document.getElementById("generate");
 
+// Characters that will be used in password
 const upperLetters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 const lowerLetters = "abcdefghijklmnopqrstuvwxyz";
 const numbers = "0123456789";
 const symbols = "!@#$%^&*()_-+=";
 
+// functions to select random items from ^
 function getLowercase() {
   return lowerLetters[Math.floor(Math.random() * lowerLetters.length)];
 }
@@ -28,6 +30,7 @@ function getSymbol() {
   return symbols[Math.floor(Math.random() * symbols.length)];
 }
 
+// Generate random password
 function generatePassword() {
   const len = lenEl.value;
 
